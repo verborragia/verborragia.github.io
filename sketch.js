@@ -7,7 +7,7 @@ let verb_1, verb_2;
 let canvasWidth;
 let canvasHeight;
 let startT, deltaT = 1000, doit = false;
-let url = 'log_cron.json';
+let url = 'http://38.242.219.56/~dedic/poemaquina_logs/log_cron.json';
 let poema_log;
 let start_unixtime;
 let bg;
