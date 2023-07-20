@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>900 milhões de poemas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    -->
+    <link rel="stylesheet" href="estilo_jquery.css" />
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      @font-face {
+        font-family: myFirstFont;
+        src: url("fonts/Hack-Regular.ttf");
+      }
+
+      body {
+        background-color: #ffb52a;
+      }
+
+      .texto {
+        //border-style: dashed;
+        width: 640px;
+        height: 720px;
+        //height: 420px;
+        font-family: myFirstFont;
+        font-size: 14px;
+        color: black;
+        //overflow-y: scroll;
+      }
+
+      p {
+        margin-left: 15px;
+        font-family: myFirstFont;
+        font-size: 14px;
+      }
+
+      .label {
+        margin-left: 15px;
+        font-size: 14-px;
+        font-family: Verdana;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .span_div {
+        text-align: center;
+        font-size: 12px;
+        font-family: courier;
+        //color: grey;
+      }
+
+      .radios {
+        //display: inline-block;
+        //white-space: nowrap;
+      }
+
+      canvas {
+        padding: 0;
+        margin: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      canvas_ {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        display: block;
+        //width: 800px;
+      }
+
+      main {
+        padding: 0;
+        margin: 0;
+      }
+
+      #popup_div_ {
+        max-width: 1280;
+        max-height: 768;
+        overflow-y: scroll;
+        padding: 20;
+      }
+    </style>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="sketch.js"></script>
+    <script>
+      function popup() {
+        $("#popup_div").css("width", 640);
+        $("#popup_div").css("height", 640);
+        $("#popup_div").css('overflow-y', 'scroll');
+        $("#popup_div").css('padding', 30);
+        $("#popup_div").popup("open");
+      }
+
+      function popup_close() {
+        $("#popup_div").popup("close");
+      }
+      
+
+    </script>
+  </head>
+  <body>
+  
+    <!--
+    <a href='javascript:popup();'>Sobre</a>
+    -->
+    <main></main>
+    <div id="popup_div" data-role="popup" data-overlay-theme="a" class="ui-content">
+      <h1>Poemarium Perpetuum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis mauris nec bibendum sodales. Phasellus ante velit, feugiat nec facilisis in, tempor eget tortor. Aenean elementum imperdiet molestie. Morbi porta odio in mi tempor dapibus. Ut consequat ex a tincidunt viverra. Aliquam erat volutpat. Nulla quis velit pellentesque, ullamcorper augue non, feugiat urna. Nulla eleifend auctor hendrerit. In hac habitasse platea dictumst. Maecenas maximus, libero non tincidunt molestie, tellus velit hendrerit dui, sit amet varius enim mauris ac risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <p>Praesent sagittis nibh a rutrum tristique. Phasellus accumsan malesuada elit, sed commodo mi suscipit non. Ut vel mi vitae metus facilisis dictum eget sed nisl. Morbi sed molestie risus. Vestibulum volutpat sit amet turpis sit amet accumsan. Maecenas scelerisque vel libero eget ornare. Phasellus pretium sollicitudin velit, sed fringilla elit ultrices a. Suspendisse tincidunt enim ullamcorper interdum sagittis. Sed commodo, justo nec ornare eleifend, libero lacus gravida ligula, non ullamcorper lectus felis sed mi. Quisque dictum eget risus vitae elementum. Proin sit amet placerat tellus, nec cursus tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam quis scelerisque ligula, in tristique nisl. Sed quis venenatis neque. Aliquam dignissim est condimentum, laoreet lorem et, pellentesque erat. Ut ornare fermentum nunc in dignissim.</p>
+      <p>Suspendisse vestibulum eros vel risus facilisis lacinia. Aenean tristique scelerisque lacus. Suspendisse fringilla volutpat iaculis. Pellentesque malesuada ex ante, feugiat tempor neque facilisis vel. Pellentesque iaculis tincidunt leo vel posuere. Quisque lacinia urna ut quam hendrerit, quis ullamcorper purus tincidunt. Morbi consequat vitae turpis sed vehicula. Pellentesque egestas iaculis magna ut laoreet. Suspendisse dictum velit mattis metus ornare rutrum. Ut est orci, dignissim in orci ultricies, varius varius justo</p>
+    </div>
+  </body>
+</html>
